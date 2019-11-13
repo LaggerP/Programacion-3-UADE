@@ -1,1 +1,6 @@
 /bin/
+*.eml
+.idea
+.classpath
+.project
+/.metadata
