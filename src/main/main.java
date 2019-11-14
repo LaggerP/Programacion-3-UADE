@@ -6,8 +6,8 @@ public class main {
 
 	public static void main (String[] args) {
 		// Ejercicio alineamiento de secuencias
-		String[] secuencia1 = {"A","C","C","C","G","A"};
-		String[] secuencia2 = {"T","C","C","T","A"};
+		String[] secuencia1 = {"A","C","C","C","G"};
+		String[] secuencia2 = {"T","C","C","T"," ","A"};
 		crearSecuencia(secuencia1, secuencia2);
 
 	}
@@ -32,24 +32,25 @@ public class main {
 				// -2 si hay espacios
 				else
 					matriz[i][j] = -2;
-				}
 			}
-
-		for (int i = 0; i<x; i++) {
-			System.out.print("|");
-			for (int j = 0; j < y; j++) {
-				System.out.print(" ");
-				System.out.print(matriz[i][j]);
-
-
-			}
-			System.out.println("\t");
-		}
-		// buscarMejorAlineamiento(matriz);
 		}
 
-	// este metodo realiza la busqueda del mejor alineamiento.
-	private static void buscarMejorAlineamiento(int[][] matriz) {
 
+	for (int i = 0; i<x; i++) {
+		System.out.print("|");
+		for (int j = 0; j < y; j++) {
+			System.out.print(" ");
+			System.out.print(matriz[i][j]);
+
+
+		}
+		System.out.println("\t");
 	}
+	// buscarMejorAlineamiento(matriz);
+}
+
+// este metodo realiza la busqueda del mejor alineamiento.
+private static void buscarMejorAlineamiento(int[][] matriz) {
+
+}
 }
